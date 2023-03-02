@@ -46,6 +46,7 @@ body {
 
 .solutions-blocks {
     margin-top: 80px;
+    max-width: 1440px;
 }
 
 .solutions-blocks__content {
