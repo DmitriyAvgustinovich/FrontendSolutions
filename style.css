@@ -82,14 +82,14 @@ body {
     color: #5C5C5C;
 }
 
-.block2 {
+.income-conditions {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 60px;
 }
 
-.block2__content {
+.income-conditions__content {
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
