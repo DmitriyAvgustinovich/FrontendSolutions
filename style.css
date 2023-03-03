@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Source+Sans+Pro:wght@400;700&display=swap');
 
 * {
     padding: 0;
@@ -79,4 +80,120 @@ body {
     font-weight: 400;
     line-height: 26px;
     color: #5C5C5C;
+}
+
+.income-conditions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+}
+
+.income-conditions__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.about-company {
+    display: flex;
+    align-items: center;
+}
+
+.about-company__content {
+    max-width: 475px;
+}
+
+.about-company__heading {
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 38px;
+    color: #56565A;
+}
+
+.about-company__descr {
+    margin-top: 15px;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #56565A;
+}
+
+.about-company__btn {
+    display: inline-block;
+    background-color: #0A467E;
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 40px 12px 40px;
+    margin: 30px 15px 0px 0px;
+}
+
+.programs__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "a c"
+        "b c"
+        "b c";
+    grid-gap: 25px;
+}
+
+.programs__item {
+    max-width: 265px;
+    padding: 25px;
+    text-align: center;
+    background-color: #F7F7F7;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+}
+
+.programs__item--order-a {
+    grid-area: a;
+}
+
+.programs__item--order-b {
+    grid-area: b;
+}
+
+.programs__item--order-c {
+    grid-area: c;
+    display: grid;
+    align-items: center;
+}
+
+.programs__item-heading {
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #56565A;
+    border-bottom: 1px #E5E5E5 solid;
+    padding-bottom: 15px;
+}
+
+.programs__item-descr {
+    padding-top: 15px;
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #56565A;
+}
+
+@media screen and (max-width: 645px) {
+    .programs__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "a a"
+            "b b"
+            "c c";
+    }
 }
